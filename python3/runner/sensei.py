@@ -109,7 +109,7 @@ class Sensei(MockableTestResult):
           "karma.".format(Fore.RED, Style.BRIGHT, test._testMethodName))
 
         self.stream.writeln("\n{0}{1}You have not yet reached enlightenment ..." \
-            .format(Fore.RESET, Style.NORMAL))
+           .format(Fore.RESET, Style.NORMAL))
         self.stream.writeln("{0}{1}{2}".format(Fore.RED, \
             Style.BRIGHT, self.scrapeAssertionError(err)))
         self.stream.writeln("")
@@ -167,7 +167,7 @@ class Sensei(MockableTestResult):
         return stack_text
 
     def report_progress(self):
-        return "You have completed {0} koans and " \
+        return "Completed {0} koans and " \
             "{1} lessons.".format(
                 self.pass_count,
                 self.lesson_pass_count)
