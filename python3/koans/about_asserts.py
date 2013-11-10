@@ -13,7 +13,6 @@ class AboutAsserts(Koan):
         # Confused? This video should help:
         #
         #   http://bit.ly/about_asserts
-
         self.assertTrue(True) # This should be true
 
     def test_assert_with_message(self):
