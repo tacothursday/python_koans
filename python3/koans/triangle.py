@@ -16,13 +16,21 @@
 # and
 #   about_triangle_project_2.py
 #
-def triangle(a, b, c):
-    if a==b==c:
-        return 'equilateral'
-    elif len(set([a, b, c])) == 2:
-        return 'isosceles'
-    else: return 'scalene'
-
-# Error class used in part 2.  No need to change this code.
 class TriangleError(Exception):
     pass
+
+def triangle(a, b, c):
+    if a==b==c:
+        if a == 0:
+            raise TriangleError("All zeros")
+        else: return 'equilateral'
+    elif c<0 : raise  TriangleError("Negative Value")
+    elif a+b<=c: raise  TriangleError("Invalid triangle")
+    elif b+c<= a: raise  TriangleError("Invalid triangle")
+    elif c+a<= b: raise  TriangleError("Invalid triangle")
+    elif len(set([a, b, c])) == 2:
+        return 'isosceles'
+
+    else: return 'scalene'
+
+
