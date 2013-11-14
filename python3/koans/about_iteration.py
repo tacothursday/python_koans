@@ -103,7 +103,7 @@ class AboutIteration(Koan):
 
         # Extra Credit:
         # Describe in your own words what reduce does.
-        # I HAVE NO CLUE@!!!!!!!. JK. but seriously.... that's kind of ridiculous. I hope this won't be on the exam.
+        # I HAVE NO CLUE@!!!!!!!. JK. but seriously.... that's kind of crazy!. I hope this won't be on the exam.
 
     # ------------------------------------------------------------------
 
